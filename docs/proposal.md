@@ -9,10 +9,10 @@
 Đại diện cho một phòng trong khách sạn.
 
 **Thuộc tính:**
-  // mã phòng
-  // loại phòng (Single, Double, VIP)
-  // giá phòng / ngày
-  // trạng thái phòng (true: trống, false: đã thuê)
+ -   mã phòng
+ -   loại phòng (Single, Double, VIP)
+ -   giá phòng / ngày
+ -   trạng thái phòng (true: trống, false: đã thuê)
 
 ---
 
@@ -21,9 +21,9 @@
 Lưu thông tin khách hàng.
 
 **Thuộc tính:**
-  // mã khách hàng
-  // họ tên
-  // số điện thoại
+  -  mã khách hàng
+  -  họ tên
+  -  số điện thoại
  
 ---
 
@@ -32,11 +32,11 @@ Lưu thông tin khách hàng.
 Lưu thông tin đặt phòng giữa khách hàng và phòng.
 
 **Thuộc tính:**
-  // mã đặt phòng
-  // khách hàng
-  // phòng được đặt
-  // số ngày ở
-  // còn hiệu lực hay đã trả phòng
+  -  mã đặt phòng
+  -  khách hàng
+  -  phòng được đặt
+  -  số ngày ở
+  -  còn hiệu lực hay đã trả phòng
 
 ---
 
@@ -45,10 +45,10 @@ Lưu thông tin đặt phòng giữa khách hàng và phòng.
 Lưu thông tin thanh toán khi khách trả phòng.
 
 **Thuộc tính:**
-  // mã thanh toán
-  // mã booking liên quan
-  // số tiền phải trả
-  // ngày thanh toán
+  -  mã thanh toán
+  -  mã booking liên quan
+  -  số tiền phải trả
+  -  ngày thanh toán
 
 ---
 
