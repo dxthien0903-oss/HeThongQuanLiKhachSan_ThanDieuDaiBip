@@ -10,8 +10,6 @@ public class Employee {
 
 package model;
 
-import enums.Role;
-
 public class Account {
     private String username;
     private String password;
