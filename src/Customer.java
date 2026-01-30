@@ -7,7 +7,8 @@ public class Customer {
     private String email;
     private String idCard;
 
-    public Customer(int customerId, String fullName, String phone, String email, String idCard) {
+    public Customer(int customerId, String fullName, String phone,
+                    String email, String idCard) {
         this.customerId = customerId;
         this.fullName = fullName;
         this.phone = phone;
@@ -17,5 +18,9 @@ public class Customer {
 
     public String getFullName() {
         return fullName;
+    }
+
+    public String getContactInfo() {
+        return fullName + " - " + phone + " - " + email;
     }
 }
