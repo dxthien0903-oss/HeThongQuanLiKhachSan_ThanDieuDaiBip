@@ -1,7 +1,7 @@
 # Introducing Members
 
 1. Đặng Xuân Thiện 
-2. Châu Minh TIến 
+2. Châu Minh Tiến 
 
 ## Project Introduction
 
