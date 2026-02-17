@@ -1,7 +1,5 @@
 package model;
 
-import enums.PaymentMethod;
-import enums.PaymentStatus;
 import java.time.LocalDate;
 
 public class Payment {
@@ -17,5 +15,20 @@ public class Payment {
         this.paymentMethod = method;
         this.paymentDate = LocalDate.now();
         this.paymentStatus = PaymentStatus.SUCCESS;
+    }
+    public int getPaymentId() {
+        return this.paymentId;
+    }
+    public Invoice getInvoice() {
+        return this.invoice;
+    }
+    public PaymentMethod getPaymentMethod() {
+        return this.paymentMethod;
+    }
+    public LocalDate getPaymentDate() {
+        return this.paymentDate;
+    }
+    public PaymentStatus getPaymentStatus() {
+        return this.paymentStatus;
     }
 }
