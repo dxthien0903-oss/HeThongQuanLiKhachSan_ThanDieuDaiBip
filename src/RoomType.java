@@ -15,11 +15,19 @@ public class RoomType {
         this.description = description;
     }
 
+    public int getTypeId() {
+        return this.typeId;
+    }
+    public String getTypeName() {
+        return this.typeName;
+    }
+    public int getMaxGuest() {
+        return this.maxGuest;
+    }
     public double getBasePrice() {
         return basePrice;
     }
-
-    public String getTypeName() {
-        return typeName;
+    public String getDescription() {
+        return this.description;
     }
 }
