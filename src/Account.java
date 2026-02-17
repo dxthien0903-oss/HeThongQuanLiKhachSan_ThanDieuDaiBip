@@ -12,7 +12,7 @@ public class Account {
     }
 
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     public void setUsername(String username) {
@@ -20,7 +20,7 @@ public class Account {
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
@@ -28,7 +28,7 @@ public class Account {
     }
 
     public String getRole() {
-        return role;
+        return this.role;
     }
 
     public void setRole(String role) {
@@ -36,7 +36,7 @@ public class Account {
     }
 
     public Employee getEmployee() {
-        return employee;
+        return this.employee;
     }
 
     public void setEmployee(Employee employee) {
@@ -48,15 +48,15 @@ public class Account {
     }
 
     public boolean isAdmin() {
-        return role != null && role.equalsIgnoreCase("ADMIN");
+        return this.role != null && this.role.equalsIgnoreCase("ADMIN");
     }
 
     @Override
     public String toString() {
         return "Account{" +
-                "username='" + username + '\'' +
-                ", role='" + role + '\'' +
-                ", employee=" + employee +
+                "username='" + this.username + '\'' +
+                ", role='" + this.role + '\'' +
+                ", employee=" + this.employee +
                 '}';
     }
 }
