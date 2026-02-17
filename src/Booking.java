@@ -1,6 +1,5 @@
 package model;
 
-import enums.BookingStatus;
 import java.time.LocalDate;
 
 public class Booking {
@@ -25,12 +24,25 @@ public class Booking {
     public long getTotalNights() {
         return java.time.temporal.ChronoUnit.DAYS.between(checkInDate, checkOutDate);
     }
-
     public double calculateRoomCost() {
         return getTotalNights() * room.getPricePerNight();
     }
-
     public BookingStatus getStatus() {
         return status;
+    }
+    public int getBookingId() {
+        return this.bookingId;
+    }
+    public Customer getCustomer() {
+        return this.customer;
+    }
+    public Room getRoom() {
+        return this.room;
+    }
+    public LocalDate getCheckInDate() {
+        return this.checkInDate;
+    }
+    public LocalDate getCheckOutDate() {
+        return this.checkOutDate;
     }
 }
