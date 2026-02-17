@@ -28,7 +28,7 @@ public class Booking {
         return getTotalNights() * room.getPricePerNight();
     }
     public BookingStatus getStatus() {
-        return status;
+        return this.status;
     }
     public int getBookingId() {
         return this.bookingId;
