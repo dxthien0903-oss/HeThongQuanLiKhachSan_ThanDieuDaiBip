@@ -16,8 +16,19 @@ public class Invoice {
         this.serviceCost = services.stream().mapToDouble(ServiceUsage::getCost).sum();
         this.totalAmount = roomCost + serviceCost;
     }
-
+    public int getInvoiceId() {
+        return this.invoiceId;
+    }
+    public Booking getBooking() {
+        return this.booking;
+    }
+    public double getRoomCost() {
+        return this.roomCost;
+    }
+    public double getServiceCost() {
+        return this.serviceCost;
+    }
     public double getTotalAmount() {
-        return totalAmount;
+        return this.totalAmount;
     }
 }
