@@ -13,7 +13,16 @@ public class Service {
         this.description = description;
     }
 
+    public int getServiceId() {
+        return this.serviceId;
+    }
+    public String getServiceName() {
+        return this.serviceName;
+    }
     public double getPrice() {
-        return price;
+        return this.price;
+    }
+    public String getDescription() {
+        return this.description;
     }
 }
