@@ -17,15 +17,22 @@ public class Room {
         this.isAvailable = true;
     }
 
-    public boolean isAvailable() {
-        return isAvailable;
+    public int getRoomId() {
+        return this.roomId;
     }
-
+    public String getRoomNumber() {
+        return this.roomNumber;
+    }
+    public int getFloor() {
+        return this.floor;
+    }
     public void setAvailable(boolean available) {
-        isAvailable = available;
+        this.isAvailable = available;
     }
-
     public double getPricePerNight() {
-        return pricePerNight;
+        return this.pricePerNight;
+    }
+    public boolean isAvailable() {
+        return this.isAvailable;
     }
 }
