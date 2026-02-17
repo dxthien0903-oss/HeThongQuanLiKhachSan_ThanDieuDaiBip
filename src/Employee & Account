@@ -1,6 +1,7 @@
 package model;
 
 public class Employee {
+    
     private int employeeId;
     private String fullName;
     private String phone;
@@ -8,8 +9,8 @@ public class Employee {
     private String position;
     private double salary;
 
-    public Employee(int employeeId, String fullName, String phone,
-                    String email, String position, double salary) {
+    public Employee(int employeeId, String fullName, String phone, String email,
+                    String position, double salary) {
         this.employeeId = employeeId;
         this.fullName = fullName;
         this.phone = phone;
@@ -18,12 +19,32 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getEmployeeId() {
+        return this.employeeId;
+    }
+
     public String getFullName() {
-        return fullName;
+        return this.fullName;
+    }
+
+    public String getPhone() {
+        return this.phone;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public String getPosition() {
+        return this.position;
+    }
+
+    public double getSalary() {
+        return this.salary;
     }
 
     public String getContactInfo() {
-        return fullName + " - " + phone + " - " + email;
+        return this.fullName + " - " + this.phone + " - " + this.email;
     }
 }
 
