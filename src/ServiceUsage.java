@@ -18,4 +18,16 @@ public class ServiceUsage {
     public double getCost() {
         return service.getPrice() * quantity;
     }
+    public Booking getBooking() {
+        return this.booking;
+    }
+    public Service getService() {
+        return this.service;
+    }
+    public int getQuantity() {
+        return this.quantity;
+    }
+    public LocalDate getUsedDate() {
+        return this.usedDate;
+    }
 }
