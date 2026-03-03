@@ -1,0 +1,4 @@
+C,1,Nguyen Van A,0901111111,a@gmail.com,123456789
+E,2,Tran Van B,0902222222,b@gmail.com,Manager,1500
+C,3,Le Thi C,0903333333,c@gmail.com,987654321
+E,4,Pham Van D,0904444444,d@gmail.com,Receptionist,800
