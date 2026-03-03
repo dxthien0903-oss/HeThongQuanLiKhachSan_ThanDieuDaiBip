@@ -1,49 +1,24 @@
 package model;
 
-public class Employee {
-    
+public class Employee extends Person {
     private int employeeId;
-    private String fullName;
-    private String phone;
-    private String email;
     private String position;
     private double salary;
 
-    public Employee(int employeeId, String fullName, String phone, String email,
-                    String position, double salary) {
+    public Employee(int employeeId, String fullName, String phone,
+                    String email, String position, double salary) {
+        super(fullName, phone, email);
         this.employeeId = employeeId;
-        this.fullName = fullName;
-        this.phone = phone;
-        this.email = email;
         this.position = position;
         this.salary = salary;
     }
 
-    public int getEmployeeId() {
-        return this.employeeId;
-    }
-
-    public String getFullName() {
-        return this.fullName;
-    }
-
-    public String getPhone() {
-        return this.phone;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-
-    public String getPosition() {
-        return this.position;
-    }
-
-    public double getSalary() {
-        return this.salary;
-    }
-
-    public String getContactInfo() {
-        return this.fullName + " - " + this.phone + " - " + this.email;
+    @Override
+    public String toString() {
+        return "Employee | "
+                + super.getContactInfo()
+                + " | EmployeeID: " + this.employeeId
+                + " | Position: " + this.position
+                + " | Salary: " + this.salary;
     }
 }
