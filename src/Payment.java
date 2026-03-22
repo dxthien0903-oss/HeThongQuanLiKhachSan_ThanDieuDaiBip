@@ -9,7 +9,7 @@ public class Payment {
     private LocalDate paymentDate;
     private String paymentStatus;
 
-    public Payment(int paymentId, Invoice invoice, PaymentMethod method) {
+    public Payment(int paymentId, Invoice invoice, String method) {
         this.paymentId = paymentId;
         this.invoice = invoice;
         this.paymentMethod = method;
