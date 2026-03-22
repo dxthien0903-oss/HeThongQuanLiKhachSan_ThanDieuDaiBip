@@ -5,16 +5,16 @@ import java.time.LocalDate;
 public class Payment {
     private int paymentId;
     private Invoice invoice;
-    private PaymentMethod paymentMethod;
+    private String paymentMethod;
     private LocalDate paymentDate;
-    private PaymentStatus paymentStatus;
+    private String paymentStatus;
 
     public Payment(int paymentId, Invoice invoice, PaymentMethod method) {
         this.paymentId = paymentId;
         this.invoice = invoice;
         this.paymentMethod = method;
         this.paymentDate = LocalDate.now();
-        this.paymentStatus = PaymentStatus.SUCCESS;
+        this.paymentStatus = "SUCCESS";
     }
     public int getPaymentId() {
         return this.paymentId;
@@ -22,13 +22,13 @@ public class Payment {
     public Invoice getInvoice() {
         return this.invoice;
     }
-    public PaymentMethod getPaymentMethod() {
+    public String getPaymentMethod() {
         return this.paymentMethod;
     }
     public LocalDate getPaymentDate() {
         return this.paymentDate;
     }
-    public PaymentStatus getPaymentStatus() {
+    public String getPaymentStatus() {
         return this.paymentStatus;
     }
 }
