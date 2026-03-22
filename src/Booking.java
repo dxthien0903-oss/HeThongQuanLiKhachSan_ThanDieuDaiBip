@@ -8,7 +8,7 @@ public class Booking {
     private Room room;
     private LocalDate checkInDate;
     private LocalDate checkOutDate;
-    private BookingStatus status;
+    private String status;
 
     public Booking(int bookingId, Customer customer, Room room,
                    LocalDate checkInDate, LocalDate checkOutDate) {
@@ -17,7 +17,7 @@ public class Booking {
         this.room = room;
         this.checkInDate = checkInDate;
         this.checkOutDate = checkOutDate;
-        this.status = BookingStatus.BOOKED;
+        this.status = "BOOKED";
         room.setAvailable(false);
     }
 
@@ -27,7 +27,7 @@ public class Booking {
     public double calculateRoomCost() {
         return getTotalNights() * room.getPricePerNight();
     }
-    public BookingStatus getStatus() {
+    public String getStatus() {
         return this.status;
     }
     public int getBookingId() {
